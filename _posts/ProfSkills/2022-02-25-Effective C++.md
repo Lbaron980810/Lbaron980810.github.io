@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Effective C++阅读笔记
-mathjax: true
 tags: C++
 ---
 

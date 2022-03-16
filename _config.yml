@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Liu Boyu's website
+title: Boyu's website
 email: lbaron980810@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blogs and Personal Website
@@ -40,7 +40,8 @@ defaults:
       type: posts
     values:
       layout: post
-      author: LiuBoyu
+      author: Liu Boyu
+      categories: unsorted
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
