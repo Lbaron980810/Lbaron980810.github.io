@@ -1,0 +1,55 @@
+title: "简历"
+name: "刘博瑜"
+# jobtitle: "高级软件研发工程师"
+contact:
+  - icon: fa-envelope
+    text: lbaron980810@163.com
+  - icon: fa-globe
+    text: wangxiaoer.com
+    link: https://crispgm.github.io/resume/resume_zh-CN.html
+  - icon: fa-github
+    text: lbaron980810
+    link: https://github.com/lbaron980810
+education:
+  - university: "哈尔滨工业大学（深圳）"
+    duration: "2020/09 - 2022/12"
+    location: "深圳"
+    major: "工学硕士，控制科学与工程"
+  - university: "哈尔滨工业大学"
+    duration: "2016/08 - 2020/06"
+    location: "哈尔滨"
+    major: "工学学士，机械电子工程"
+skills:
+  - title: "程序设计"
+    items: "C/C++, Java, Python, Ruby, PHP, HTML/CSS, JavaScript, Vue"
+  - title: "计算机系统"
+    items: "Linux/Unix, 设计模式, 敏捷开发, 面向对象, 数据库设计, 多线程编程"
+  - title: "其它"
+    items: "Sublime Text, git, shell"
+experience:
+  - title: "高级研发工程师"
+    duration: "2016/06 - 至今"
+    company: "T 公司"
+    description: "我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。"
+  - title: "研发工程师"
+    duration: "2013/01 - 2016/05"
+    company: "A 公司"
+    description: "我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。"
+  - title: "研发工程师（实习）"
+    duration: "2011/02 - 2012/12"
+    company: "B 公司"
+    description: "我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。"
+projects:
+  - name: "Crisp Resume"
+    description: "一个基于 Jekyll 的极简风格响应式简历模板"
+    contribution: "贡献者"
+  - name: "你的项目"
+    description: "一个非常强大的开源项目，使用了若干强力技术，大大提升了生产力"
+    contribution: "创建者和维护者"
+languages:
+  - name: "英语"
+    proficiency: "熟练，托福106分"
+  - name: "中文"
+    proficiency: "母语"
+
+

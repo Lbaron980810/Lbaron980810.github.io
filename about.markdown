@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: resume
+title: About_me
+permalink: /about.html
 ---
 
 

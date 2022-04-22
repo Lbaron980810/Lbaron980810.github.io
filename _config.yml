@@ -21,7 +21,7 @@
 title: Boyu's website
 email: lbaron980810@163.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Blogs and Personal Website
+  All about my life and I.
 baseurl:  # the subpath of your site, e.g. /blog
 url: https://Lbaron980810.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
@@ -31,7 +31,10 @@ github_username:  Lbaron980810
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
+  - jekyll-seo-tag
+sass:
+  sass_dir: _sass
 
 defaults:
   -
@@ -50,14 +53,14 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
