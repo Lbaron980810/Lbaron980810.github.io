@@ -1,5 +1,5 @@
 ---
-layout: resume
+layout: about_me
 title: About_me
 permalink: /about.html
 ---
