@@ -1,6 +1,7 @@
 ---
 title: Effective C++阅读笔记
 tags: C++
+categories: CodingBasics ReadingNotes
 ---
 
 # Effective C++ 阅读笔记

@@ -1,7 +1,8 @@
 ---
 title: 轨迹规划学习笔记
 mathjax: true
-tags: Trajectory Planning
+# tags: Trajectory Planning
+categories: CourseNotes
 ---
 # Lecture 1
 

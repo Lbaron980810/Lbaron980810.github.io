@@ -5,4 +5,5 @@
 layout: home
 # layout: welcome
 ---
-Welcome to my website!!!
+<p> Welcome to my website!!! </p>
+The site is still under construction, but you can check my blogs and resume
