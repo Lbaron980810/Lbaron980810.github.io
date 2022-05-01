@@ -1,14 +1,16 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.scss">
 
-<div class="leftNavigator" id="navigation" style="float:right;">
+<div class="blogNavigator" id="navigation" >
   <nav>
-    {% for post in site.posts %}
-      <a class="post-link" href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-          </a></br>
-      <!-- <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-          {{ item.name }}
-      </a> -->
-    {% endfor %}
+  {% assign mydocs = site.posts | group_by: 'category' | sort:"name" %}
+  {% for cat in mydocs %}
+  <h2>{{ cat.name }}</h2>
+      <ul>
+        {% assign items = cat.items | sort: 'order' %}
+        {% for item in items %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
   </nav>
 </div>

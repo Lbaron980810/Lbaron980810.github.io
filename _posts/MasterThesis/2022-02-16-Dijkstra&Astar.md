@@ -1,9 +1,7 @@
 ---
-layout: post
 title: 基于搜索的轨迹规划算法
-mathjax: true
 tags: Trajectory Planning
-categories: ProjectExperience
+category: ProjectExperience
 ---
 
 ## Dijkstra and A*

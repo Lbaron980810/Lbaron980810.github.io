@@ -33,6 +33,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-toc
 sass:
   sass_dir: _sass
 
@@ -44,7 +46,21 @@ defaults:
     values:
       layout: post
       author: Liu Boyu
-      categories: unsorted
+      mathjax: true
+      toc: true
+      permalink: /Blogs/:categories/:title.html
+toc:
+  max_level: 2
+
+# jekyll-archives:
+#   enabled: all
+#   layout: archive
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/tag/:name/'
+#     category: '/category/:name/'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
