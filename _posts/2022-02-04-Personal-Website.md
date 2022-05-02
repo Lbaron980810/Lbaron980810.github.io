@@ -1,3 +1,8 @@
+---
+# title: Boyu's website
+category: Tests
+tags: test
+---
 # Personal Website
 
 在尝试利用https://github.com/kitian616/jekyll-TeXt-theme搭建个人博客网站时，由于完全不会Ruby，发现看代码效率很低，于是从Ruby语言开始学起

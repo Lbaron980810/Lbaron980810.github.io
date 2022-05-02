@@ -1,6 +1,7 @@
 ---
 title: 计算机网络课程笔记
-categories: CourseNotes
+# tags: 
+category: CourseNotes
 ---
 # Chapter1: 概论
 

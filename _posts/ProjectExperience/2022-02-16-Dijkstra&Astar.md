@@ -1,6 +1,6 @@
 ---
 title: 基于搜索的轨迹规划算法
-tags: Trajectory Planning
+# tags: Trajectory Planning
 category: ProjectExperience
 ---
 

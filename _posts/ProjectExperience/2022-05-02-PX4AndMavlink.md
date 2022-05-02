@@ -1,6 +1,7 @@
 ---
 title: PX4学习
-categories: ProjectExperience
+# tags: 
+category: ProjectExperience
 ---
 # 初识PX4：
 
@@ -1083,11 +1084,11 @@ WorkItemExample::WorkItemExample() :
 
 Flight Controller (only)
 
-<img src="./Pics_PX4Learning/PX4Architecture_FlightControllerOnly.jpg" alt="PX4Architecture_FlightControllerOnly" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/PX4Architecture_FlightControllerOnly.jpg" alt="PX4Architecture_FlightControllerOnly" style="zoom:50%;" />
 
 FC & Companion computer
 
-<img src="./Pics_PX4Learning/PX4Archi_FC&CompanionComputer.jpg" alt="PX4Archi_FC&CompanionComputer" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/PX4Archi_FC%2526CompanionComputer.jpg" alt="PX4Archi_FC&CompanionComputer" style="zoom:50%;" />
 
 
 
@@ -1111,7 +1112,7 @@ FC与上一种一样跑常规的PX4飞行堆栈(flight stack)，Companion comput
 
 每个部分都是一个模块，程序运行的时候，可以通过`top`命令(在Nuttx Shell中，SITL Shell中是pxh>)查看哪些模块在工作，并通过`<module_name> start/stop`控制。
 
-![PX4Structure](./Pics_PX4Learning/PX4Structure.jpg)
+![PX4Structure](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/PX4Structure.jpg)
 
 可分为五个部分：数据存取(Storage)，外部通讯(External Connectivity)，驱动程序(Drivers)，飞行控制(Flight Control)，消息总线(Message Bus)
 
@@ -1119,7 +1120,7 @@ FC与上一种一样跑常规的PX4飞行堆栈(flight stack)，Companion comput
 
 导航、控制算法的集合，包含控制器和位姿估计器
 
-![PX4Archi_FightStackBuildingBlock](./Pics_PX4Learning/PX4Archi_FightStackBuildingBlock.jpg)
+![PX4Archi_FightStackBuildingBlock](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/PX4Archi_FightStackBuildingBlock.jpg)
 
 估计器测量，控制器计算，mixer转换
 
@@ -1286,7 +1287,7 @@ S: <group> <index> <-ve scale> <+ve scale> <offset> <lower limit> <upper limit>
 
 S行：必须在O行下面。 `<group>` 确定从哪个控制组（mixer部分的最开始介绍了控制组的序号，例如0是Flight Control，1是Flight Control VTOL/Alternate）读取scaler。`<index>`指哪一个值。例如：`<group> = 0, <index> = 0` 就表示roll
 
-![ControlGroup](./Pics_PX4Learning/ControlGroup.jpg)
+![ControlGroup](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/ControlGroup.jpg)
 
 #### Null Mixer
 
@@ -1713,7 +1714,7 @@ rostopic list -v /topic_name # 如下命令可以获得topic的详细信息，�
 rosmsg show nav_msgs/Odometry # how the data is structured
 ```
 
-<img src="Pics_PX4Learning/Screenshot from 2021-11-06 19-52-13.png" alt="Screenshot from 2021-11-06 19-52-13" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-11-06%2019-52-13.png" alt="Screenshot from 2021-11-06 19-52-13" style="zoom:50%;" />
 
 
 
@@ -1762,7 +1763,7 @@ rosmsg show nav_msgs/Odometry # how the data is structured
 
 # CSDN上待整理的资料
 
-![飞控系统控制流程](Pics_PX4Learning/Screenshot from 2021-10-13 09-21-32.png)
+![飞控系统控制流程](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-13%2009-21-32.png)
 
 # 1224 omni_hex/PX4SIM/PX4-Autopilot代码整理
 

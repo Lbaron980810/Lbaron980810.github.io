@@ -1,6 +1,6 @@
 ---
 title: Ubuntu新系统配置步骤
-categories: ProjectExperience
+category: ProjectExperience
 ---
 1. 修改中文源镜像：软件和更新中修改，可以自动搜索，一般选择清华的，勾上“源码”
 

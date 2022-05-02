@@ -1,6 +1,7 @@
 ---
 title: 李宏毅2021 概述Reinforcement Learning
-categories: CourseNotes
+# tags: 
+category: CourseNotes
 ---
 Outline:
 
@@ -14,11 +15,11 @@ Outline:
 
 已知Machine Learning = Looking for a Function，实际上RL也是在寻找一个function
 
-![Screenshot from 2022-02-05 19-40-07](Pics_RL/Screenshot from 2022-02-05 19-40-07.png)
+![Screenshot from 2022-02-05 19-40-07](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202022-02-05%2019-40-07.png)
 
 希望找到一个function，使得environment给actor的reward总和最大
 
-![Screenshot from 2022-02-05 19-40-21](Pics_RL/Screenshot from 2022-02-05 19-40-21.png)
+![Screenshot from 2022-02-05 19-40-21](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202022-02-05%2019-40-21.png)
 
 RL的真正难点就是如何求解这一Optimization问题，如何找到一组network参数使R最大
 

@@ -1,6 +1,7 @@
 ---
 title: 计算几何学习笔记
-categories: CourseNotes
+# tags: 
+category: CourseNotes
 ---
 
 # Chapter 1: Convex Hull

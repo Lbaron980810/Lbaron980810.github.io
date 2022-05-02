@@ -1,6 +1,7 @@
 ---
 title: 计算机操作系统学习笔记
-categories: CourseNotes
+# tags: 
+category: CourseNotes
 ---
 # Chapter 1: Overview
 
@@ -14,7 +15,7 @@ Part 4 Device Management 设备管理
 
 Part 5 File Management 文件管理
 
- ![Screenshot from 2021-10-07 14-30-31](Pics_ComputerOS/Screenshot from 2021-10-07 14-30-31.png)
+ ![Screenshot from 2021-10-07 14-30-31](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2014-30-31.png)
 
 ## Learning Objectives:
 
@@ -126,13 +127,13 @@ Jobs在外存排队，Monitor把作业从外存放到内存，优先选择哪个
 
 在程序处理完成，进行IO的时候，cpu就空闲出来，这就出现了多道处理的可能。
 
-![Screenshot from 2021-10-07 17-28-32](Pics_ComputerOS/Screenshot from 2021-10-07 17-28-32.png)
+![Screenshot from 2021-10-07 17-28-32](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2017-28-32.png)
 
 ### Multiprogramming(多道程序设计)
 
 （多道程序设计又会涉及到效率提高的问题，安全性问题等等）    
 
-![Screenshot from 2021-10-07 19-28-07](Pics_ComputerOS/Screenshot from 2021-10-07 19-28-07.png)
+![Screenshot from 2021-10-07 19-28-07](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2019-28-07.png)
 
 **Difficulties:**
 
@@ -155,7 +156,7 @@ Jobs在外存排队，Monitor把作业从外存放到内存，优先选择哪个
 - 处理器的时间由多个users分享
 - 多个user同时通过多个终端访问系统
 
-![Screenshot from 2021-10-07 20-21-21](Pics_ComputerOS/Screenshot from 2021-10-07 20-21-21.png)
+![Screenshot from 2021-10-07 20-21-21](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2020-21-21.png)
 
 ### 现代OS的基本类型及基本特征
 
@@ -223,7 +224,7 @@ Resource：程序和数据组成的软件资源以及CPU、存储器、IO设备�
   - 包含若干块(module)，每一块实现一组基本概念以及与其相关的基本属性
   - 块与块之间的相互关系：所有各级的实现**均可以任意引用其他各块**所提供的概念以及属性
 
-![Screenshot from 2021-10-07 21-03-52](Pics_ComputerOS/Screenshot from 2021-10-07 21-03-52.png)
+![Screenshot from 2021-10-07 21-03-52](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2021-03-52.png)
 
 ---
 
@@ -239,7 +240,7 @@ Resource：程序和数据组成的软件资源以及CPU、存储器、IO设备�
 
 
 
-![Screenshot from 2021-10-07 21-45-12](Pics_ComputerOS/Screenshot from 2021-10-07 21-45-12.png)
+![Screenshot from 2021-10-07 21-45-12](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2021-45-12.png)
 
 
 
@@ -252,11 +253,11 @@ Resource：程序和数据组成的软件资源以及CPU、存储器、IO设备�
 - 核外子系统，CPU特权模式称为User Mode
 - 核心子系统，CPU特权模式称为Kernel Mode
 
-![Screenshot from 2021-10-07 21-49-28](Pics_ComputerOS/Screenshot from 2021-10-07 21-49-28.png)
+![Screenshot from 2021-10-07 21-49-28](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2021-49-28.png)
 
 ### Microkernels（微核）结构
 
-![Screenshot from 2021-10-07 21-54-34](Pics_ComputerOS/Screenshot from 2021-10-07 21-54-34.png)
+![Screenshot from 2021-10-07 21-54-34](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-07%2021-54-34.png)
 
 # Chapter 2: 进程与调度 
 
@@ -282,21 +283,21 @@ Resource：程序和数据组成的软件资源以及CPU、存储器、IO设备�
   - 进程的5状态: Running执行（占用处理机）, Ready就绪（准备执行）, Blocked阻塞（等待某事件发生）, New新状态（进程已经创建，但没有被OS接纳为可执行进程）, Exit退出（取消或停止，将死状态）
   - 进程状态转换图
 
-![Screenshot from 2021-10-08 22-01-15](Pics_ComputerOS/Screenshot from 2021-10-08 22-01-15.png)
+![Screenshot from 2021-10-08 22-01-15](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-08%2022-01-15.png)
 
 - 7状态：
 
   - Swapping 对换技术、交换技术：将内存中暂时不能运行的进程或暂时不用的程序和数据，Swapping-out到外存，以腾出足够的内存空间，把已具备运行条件的进程或进程需要的数据和程序，Swapping-in到内存 
   - 挂起状态 Suspended Processes：将正在等待I/O的程序交换到disk来清理出更多的内存，于是Block state的程序在被交换到外存之后就变成了Suspended state。当然，导致挂起的原因有很多
 
-  <img src="Pics_ComputerOS/Screenshot from 2021-10-09 16-33-50.png" alt="Screenshot from 2021-10-09 16-33-50" style="zoom:50%;" />
+  <img src="https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-09%2016-33-50.png" alt="Screenshot from 2021-10-09 16-33-50" style="zoom:50%;" />
 
   - 于是又有新的状态出现：
     - Ready, Suspend：进程在外存，只要调入内存即可执行
     - Blocked, Suspend：进程在外存，等待事件
     - Blocked, Suspend到Ready, Suspend是可以实现的，通过PCB完成
 
-![Screenshot from 2021-10-09 16-39-26](Pics_ComputerOS/Screenshot from 2021-10-09 16-39-26.png)
+![Screenshot from 2021-10-09 16-39-26](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-09%2016-39-26.png)
 
 
 
@@ -360,7 +361,7 @@ Operating System Control Structures
 
 进程的逻辑抽象就叫进程映像
 
-![Screenshot from 2021-10-12 11-36-39](Pics_ComputerOS/Screenshot from 2021-10-12 11-36-39.png)
+![Screenshot from 2021-10-12 11-36-39](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-12%2011-36-39.png)
 
 ### 操作系统如何控制系统进程的并发执行
 
@@ -467,7 +468,7 @@ Primitives 原语：最小的进程单位，不可中断
 - Access to the memory and resources of its process
   - all threads of a process share this
 
-![Screenshot from 2021-10-18 21-56-15](Pics_ComputerOS/Screenshot from 2021-10-18 21-56-15.png)
+![Screenshot from 2021-10-18 21-56-15](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/websitePics/Screenshot%20from%202021-10-18%2021-56-15.png)
 
 
 
