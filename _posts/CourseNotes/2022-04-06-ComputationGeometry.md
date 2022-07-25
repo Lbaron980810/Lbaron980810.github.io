@@ -1150,6 +1150,92 @@ Contour的特性：
 
 
 
+# Chapter 5: Delaunay Triangulation
+
+## Point Set Triangulation
+
+问题定义
+
+![Screenshot from 2022-05-04 09-41-33](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-04%2009-41-33.png)
+
+这种三角剖分是不唯一的，但数量是固定的。
+
+如果一个点集的点数为n，凸包的极点数为h，那么一定会用到3(n-1)-h条对角线和2(n-1)-h个三角形
+
+下图为两种三角剖分的方案，这样通过变换一条边实现的被称为**Edge Flipping**。通过Edge Flipping可以得到最优的三角剖分方案。
+
+![Screenshot from 2022-05-04 09-50-28](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-04%2009-50-28.png )
+
+三角剖分的Upper bound：类似于前面讲过的将两个凸包连接起来的算法，将点集递归的分为两个部分，然后组合连接即可。这个复杂度是O(nlogn)
+
+![Screenshot from 2022-05-04 09-57-22](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-04%2009-57-22.png)
+
+Lower bound: 可以通过将sorting规约到triangulation证明二者的lower bound都是O(nlogn)的
+
+
+
+## Delaunay Triangulation
+
+对偶图：如下图所示，对于右侧的voronoi图而言，左侧的图是通过将所有的edge相关的两个site相连接而得到的。
+
+而这就会生成一个三角化之后的凸多边形，这种三角化的方式成为Delaunay Triangulation。
+
+性质：三角剖分后三角形的数目等于Voronoi vertex的数目
+
+![Screenshot from 2022-05-04 19-53-52](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-04%2019-53-52.png)
+
+## Properties
+
+划分得到的所有三角形的外接圆内部都没有其他的点，因此是空的，而这些圆的圆心就是一个voronoi vertex
+
+
+
+![Screenshot from 2022-05-05 09-10-35](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2009-10-35.png)
+
+而得到的三角剖分的结果图中，两个site被连起来，则以他们的连线为弦，一定存在一个空圆。
+
+从右侧的Voronoi图理解就是：以在Voronoi edge上的点为圆心，到相邻的site的距离为半径，得到的圆
+
+![Screenshot from 2022-05-05 09-12-12](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2009-12-12.png)
+
+NNG：最近邻图，必然是Delauny Triangulation的子图
+
+对于CG而言，以这条线作为直径的圆是空圆，因此G是C的最近邻。但这是一个有向图，F是G的最近邻
+
+![Screenshot from 2022-05-05 09-12-37](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2009-12-37.png)
+
+
+
+
+
+## Proximity Graph
+
+Delauny Triangulation得到的图是一系列的超图，因此可以通过做Delauny Triangulation进而得到其他的图。这里先介绍这些图中的两个图，这两个图都是反应的元素之间的邻近性，因此被称为Proximity Graphs。
+
+### Gabriel Graph
+
+![Screenshot from 2022-05-05 22-06-02](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2022-06-02.png)
+
+构造改图的时间不会超过O(nlogn)，主要时间用于构造Voronoi Graph
+
+![Screenshot from 2022-05-05 22-08-03](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2022-08-03.png)
+
+
+
+### Relative Neighborhood Graph
+
+这个图是Gabriel Graph的子图，构造时间仍然是O(nlogn)，如果已经有了Voronoi图，则构造时间变成O(n)
+
+![Screenshot from 2022-05-05 22-09-36](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2022-09-36.png)
+
+
+
+### Lower Bounds
+
+也是用规约到排序的方法来求下界
+
+![Screenshot from 2022-05-05 22-18-11](https://raw.githubusercontent.com/Lbaron980810/blog_img/main/ComputationGeometry/Screenshot%20from%202022-05-05%2022-18-11.png)
+
 
 
 

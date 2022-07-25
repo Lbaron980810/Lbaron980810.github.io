@@ -24,8 +24,9 @@ skills:
     # items: "C/C++, MATLAB, Simulink"
   - title: "掌握基本 Linux 应用及 ROS 开发， Eigen, MoveIt, OMPL 等开源库"
     # items: "Linux/Unix, 设计模式, 敏捷开发, 面向对象, 数据库设计, 多线程编程"
-  - title: "熟悉搜索、采样、优化等轨迹规划方法"
+  - title: "熟悉图搜索(A*等)、采样(RRT等)、优化等轨迹规划方法"
     # items: "Sublime Text, git, shell"
+  - title: "掌握基本Linux应用及ROS1、ROS2开发，掌握Eigen, MoveIt, OMPL等开源库的使用"
   - title: "掌握 SolidWorks, AutoCAD 等建模软件"
 # experience:
 #   - title: "硕士阶段课题"
@@ -43,16 +44,21 @@ skills:
 projects:
   - name: "全驱动无人机轨迹规划"
     contribution: "硕士阶段课题"
-    description: "利用 MATLAB Simulink 验证全驱动无人机原理并实现运动学仿真。将开源 PX4 飞控的分配矩阵由欠驱动无人机修改为全驱动无人机并实现运动控制。在 A* 算法中加入姿态，拓展至六维以适配全驱动无人机并利用多项式拟合优化"
-  - name: "多通道麻醉注射泵"
-    contribution: "本科毕业设计"
-    description: "用于智能麻醉系统的多通道麻醉注射泵的设计，独立完成机械结构、控制电路设计及单片机代码"
-  - name: "超声柔性传感器"
+    description: "利用MATLAB Simulink搭建仿真环境，实现全驱动无人机运动仿真；
+                  修改开源PX4飞控的分配矩阵，由欠驱动无人机修改为全驱动无人机并实现运动控制；
+                  使用RRT*算法，在三维空间中搜索可行6D位姿点。在SE(3)空间中将位置与姿态解耦优化，得到适用于全驱动无人机的6D平滑轨迹。"
+  - name: "跨越险阻竞赛"
+    contribution: ""
+    description: "竞赛目标：控制地面机器人在双层建筑中完成指定物品投掷与抓取、定位建图、测量及自动返航任务；
+                  负责内容：实时楼梯检测，对雷达生成的点云信息利用区域生长得到平面，根据平面尺寸及位置关系判断是否为楼梯形状，输出机器人面前楼梯的中心点、法向量、宽度及高度"
+  - name: "自主科研实习"
     contribution: "科研助理"
-    description: "参与研制测量人体血流血压的柔性传感器，负责传感器制作、设计阻抗匹配电路以增强信号的强度及信噪比。使用 Vera Sonics 系统，利用 MATLAB 处理反馈超声信号以实现超声聚焦、自动扫描和结果实时显示"
-  - name: "多通道麻醉注射泵"
+    description: "参与项目：基于多普勒超声原理测量人体血流血压的柔性传感器；
+                  负责内容：柔性超声阵列传感器制作、设计阻抗匹配电路以降低信噪比，用MATLAB处理反馈的超声信号以实现超声聚焦、自动扫描和结果实时显示"
+  - name: "ABU ROBOCON 2019"
     contribution: "电控组成员"
-    description: "在stm32上用PID控制电机，调试齿轮齿条驱动的四足机器人并编写运动执行逻辑代码"
+    description: "竞赛目标：四足机器人以最快的速度完成给定任务并通过障碍地形，到达终点；
+                  负责内容：四足机器人的机身布线，编写调试机器人的运动控制算法及运动执行逻辑代码"
 languages:
   - name: "英语"
     proficiency: "熟练，托福106分"
