@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "9a59687f64f35866",
+    "type": "split",
+    "children": [
+      {
+        "id": "93cbdf19198f9718",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "536ce1690615a632",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ReadingNotes/2022-08-24-C++.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2843c4ebac32a322",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb95046b5e9f2810",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d33b90bf89a5c4e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "885ac166bf653af2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28c5365602237e08",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "05af32b677e8d292",
+    "type": "split",
+    "children": [
+      {
+        "id": "27d360d77e5f34a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bef1b13ae3c3c0d7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ReadingNotes/2022-08-24-C++.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e3f424be57ef662f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ReadingNotes/2022-08-24-C++.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "579795520352a385",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "40fd6442fa107053",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ReadingNotes/2022-08-24-C++.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "536ce1690615a632",
+  "lastOpenFiles": [
+    "ProjectExperience/2022-05-02-Quaternion.md",
+    "ProjectExperience/2022-05-02-PX4AndMavlink.md",
+    "ProjectExperience/2022-05-07-bug.md"
+  ]
+}

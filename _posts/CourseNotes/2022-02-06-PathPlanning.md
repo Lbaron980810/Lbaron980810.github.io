@@ -19,7 +19,7 @@ old school planning pipeline：
 
 Soft constrain: 加在优化函数上，但不一定满足
 
-Soft constrain: 数学上一定满足
+Hard constrain: 数学上一定满足
 
 ## Q3：Map = Data Structure + Fusion Method
 

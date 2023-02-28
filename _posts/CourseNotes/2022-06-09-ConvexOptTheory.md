@@ -1586,6 +1586,19 @@ $$
 
 ### 从鞍点(Saddle Point)的角度解释
 
+对于函数$f(w, z)$在集合$w \in S_w, z \in S_z$上
+
+min-max 不等式：
+$$
+\inf_{x \in D} \sup_{\lambda \geq 0} L(x, \lambda) \leq
+\sup_{\lambda \geq 0} \inf_{x \in D} L(x, \lambda) \\
+\arg_{z, w} \{ \inf_{x \in D} \sup_{\lambda \geq 0} L(x, \lambda) \} = 
+\arg_{z, w} \{ \sup_{\lambda \geq 0} \inf_{x \in D} L(x, \lambda) \}
+$$
+$(\tilde w, \tilde z)$使等式成立，称为鞍点，且有
+$$
+f(\tilde w, z) \leq f(\tilde w, \tilde z) \leq f(w, \tilde z), \forall z \in S_z, \forall w \in S_w
+$$
 考虑$L(x, \lambda)$
 
 鞍点：$(x^*, \lambda^*)$
@@ -1617,6 +1630,18 @@ $$
 
 
 
+**鞍点定理**
+
+若$(\tilde x, \tilde \lambda)$为$L(x, \lambda)$的鞍点$\Leftrightarrow$强对偶存在，且$\tilde x, \tilde \lambda$为Primal与Dual的最优解
+
+
+
+
+
+
+
+
+
 ### 从多目标优化角度解释
 
 略
@@ -1626,6 +1651,95 @@ $$
 ### 从经济学角度解释
 
 略，就是举了一个最优价格问题的例子来表述
+
+
+
+## ep 33-34 助教习题课，跳过
+
+
+
+
+
+## class 15 (ep 35-36)
+
+仍然考虑如下问题形式
+$$
+\min f_0(x) \\
+s.t. f_i(x) \leq 0, i = 1,...,m \\
+h_i(x) = 0 i = 1,...,p
+$$
+假设有$p^* = d^*$且所有函数可微
+
+对偶函数与对偶问题：
+$$
+g(\lambda, v) = \inf_x \{f_0(x) + \sum_{i = 1}^m \lambda_if_i(x) + \sum_{i = 1}^p v_i h_i(x)\} \\
+
+\max g(\lambda, v) \\
+s.t. \lambda \geq 0
+$$
+对于最优解$x^*, \lambda^*, v^*$，有
+$$
+\left \{
+\begin{array}{lcl}
+f_i(x^*) \leq 0, i = 1,...,m \\
+h_i(x^*) = 0, i = 1,...p \\
+\lambda^* \geq 0
+\end{array}
+\right.
+$$
+
+$$
+f_0(x^*) =_{p^* = d^*} g(\lambda^*, v^*) = \inf_x \{f_0(x) + \sum_{i = 1}^m \lambda_i^* f_i(x) + \sum_{i = 1}^p v_i^*h_i(x)\} \\
+\leq f_0(x^*) + \sum_{i = 1}^m \lambda_i^* f_i(x^*) + \sum_{i = 1}^p v_i^*h_i(x^*) \\
+\leq f_0(x^*)
+$$
+
+因此上面的$\leq$都变成了=，于是可知
+
+1) Complementarity stackness 互补松弛条件
+
+$$
+\sum_{i = 1}^m \lambda_i^* f_i(x^*) = 0 \\
+\Rightarrow \lambda_i^* f_i(x^*) = 0, i = 1,...,m \\
+\lambda_i^* > 0 \Rightarrow f_i(x^*) = 0 \\
+f_i(x^*) < 0 \Rightarrow \lambda_i^* = 0
+$$
+
+2) stationarity 稳定性条件
+
+$$
+\frac{\part L(x, \lambda^*, v^*)}{x} \mid_{x = x^*} = 0 \\
+\grad f_0(x^*) + \sum_{i = 1}^m \lambda_i^* \grad f_i(x^*) + \sum_{i = 1}^p v_i^* \grad h_i(x^*) = 0
+$$
+
+因此对最优解$x^*, \lambda^*, v^*$，必然满足以下条件，这四个条件被统称为KKT条件
+
+- primal feasibility
+- dual feasibility
+- complementarity stackness 
+- stationarity
+
+
+
+**若原问题为凸问题，各个函数可微，对偶间隙为零，则KKT条件为充要条件**
+
+对于**可微优化问题**：
+
+- 如果满足$p^* = d^*$，则KKT条件是必要条件
+- 如果原问题是凸问题，则KKT条件是充分条件
+- 若原问题为凸问题，对偶间隙为零，则KKT条件为充要条件
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

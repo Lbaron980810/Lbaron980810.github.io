@@ -1,0 +1,11 @@
+{
+  "theme:use-light": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ]
+}
